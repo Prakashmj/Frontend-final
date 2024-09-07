@@ -1,0 +1,733 @@
+.upgradeFooter {
+  margin-top: auto;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  z-index: 100;
+}
+
+.pageContainer {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #000000, #000000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'JetBrains Mono', monospace;
+    padding-bottom: 80px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .supr {
+    color: #FFFFFF;
+  }
+  
+  .human {
+    color: #FF7500;
+  }
+  
+  .settingsIcon {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .tabContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: 5px 0;
+    margin-top: -15px;
+    height: 60px;
+  }
+  
+  .tab {
+    color: #FFFFFF;
+    font-family: 'JetBrains Mono', monospace;
+    padding: 10px 10px;
+    font-size: 0.6rem;
+    border: 1px solid rgb(58, 58, 58);
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  
+  }
+  
+  .activeTab {
+    color: #5a5a5a;
+    border: 1px solid;
+    color: #FF7500;
+    /* box-shadow: 0 0 10px; */
+  }
+  
+  .divsContainer {
+    width: 94%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 21px; 
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #0a0601, #000000);
+  }
+  
+  .divContainer {
+    background-color: #000000;
+    border: 2px solid #FF7500;
+    border-radius: 12px;
+    width: calc(48% - 10px);
+    height: 160px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    position: relative;
+    box-shadow: 0 0 3px #865020;
+  
+  }
+  
+  .itemHeader {
+    background-color: #000000; 
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%; 
+    border-bottom: 1px solid; 
+    position: relative;
+    /* z-index: 1;  */
+    margin-top: 5px;
+    margin-bottom: 0; /* Ensures no gap between header and content */
+  }
+  
+  .itemName {
+    font-family: 'JetBrains Mono'; 
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center; 
+    margin: 0;
+    font-weight: 800;
+  }
+  
+  .contentContainer {
+    display: flex;
+    flex-direction: row; /* Keeps the left and right halves side by side */
+    height: calc(101% - 40px); /* Adjust height to fit content excluding the header */
+  }
+  
+  .leftContent {
+    width: 60%;
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 0.1px solid #4b4949;
+    margin-top: 13px;
+  }
+  
+  .rightContent {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; /* This centers items horizontally */
+    padding-left: 5px;
+  }
+  
+  .icon {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 6px;
+    margin-top: -18px;
+  }
+  
+  .coinMin, .coinValue {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 2px;
+  }
+  .coinValue {
+    margin-top: -1px;
+  }
+  
+  .levelContainer, .costContainer {
+    display: flex;
+    margin-top: -7px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .levelContainer {
+    margin-top: -7px;
+    width: 2.5rem;
+    margin-left: auto;  /* Centers the levelContainer */
+    margin-right: auto; /* Centers the levelContainer */
+  }
+
+  .costContainer {
+    margin-top: -25px;
+    border-top: 1px solid #4b4949;
+    width: 2.5rem;
+    padding-top: 5px;
+    font-family: 'JetBrains Mono', monospace;
+    margin-left: auto;  /* Added to center the costContainer */
+    margin-right: auto; /* Added to center the costContainer */
+  }
+  
+  .levelContainer p, .costContainer p {
+    color: #FFFFFF;
+    font-size: 0.7rem;
+    margin: 2px;
+    font-weight: 800;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+.suprDivContainer {
+  background-color: #000000;
+  border: 2px solid #FF7500;
+  border-radius: 7px;
+  width: calc(91% - 10px);
+  height: 180px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  position: relative;
+  box-shadow: 0 0 15px #653c18a5;
+  margin-left: 20px;
+  
+}
+
+.suprContentContainer {
+  display: flex;
+  flex-direction: row;
+  height: calc(100% - 40px);
+}
+
+.suprLeftContent {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageCircle {
+  background-color: #FF7500;
+  border: 3px solid #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  margin-top: -20px;
+}
+
+.suprIcon {
+  width: 70px;
+  height: 70px;
+}
+
+.suprRightContent {
+  height: 100px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 4px;
+  border-left: 0.1px solid #4f4d4d;;
+}
+
+.suprUpperRight {
+  display: flex;
+  justify-content: space-between;
+}
+
+.suprBottomRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.levelContainerSupr, .costContainerSupr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coinMin, .coinValue {
+  color: #FFFFFF;
+  font-size: 12px;
+  margin: 2px;
+  font-weight: 800;
+}
+
+.suprBottomRight .coinMin {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.suprBottomRight .coinValue {
+  font-size: 13px;
+  font-weight: bold;
+  font-weight: 800;
+}
+
+/* Pop-up Modal */
+.popUpOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+.popUpContainer {
+  background-color: #000000;
+  border: 1px solid #FF7500;
+  border-radius: 15px;
+  padding: 20px;
+  width: 68%;
+  max-width: 400px;
+  position: relative;
+  z-index: 201;
+}
+
+.popUpHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.popUpImageCircle {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  margin-top: -75px;
+  align-items: center;
+  justify-content: center;
+}
+
+.popUpIcon {
+  width: 70px;
+  height: 70px;
+}
+
+.popUpHeading {
+  color: #FF7500;
+  font-size: 22px;
+  margin-top: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.popUpQuote {
+  color: #a1a1a1;
+  font-size: 14px;
+  text-align: center;
+  font-style: italic;
+  margin-top: -20px;
+  font-weight: 700;
+}
+
+.popUpDetails {
+  border-top: 0.2px solid #4f4d4d;
+  border-bottom: 0.2px solid #4f4d4d;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 60px;
+}
+
+.levelContainerPop, .costContainerPop, .coinContainerPop {
+  display: flex;
+  /* border: 0.5px solid grey; */
+  flex-direction: column;
+  align-items: center;
+  width: 70px;
+  padding: 5.5px;
+}
+
+.levelContainerPop p, .costContainerPop p, .coinContainerPop p {
+  color: #FFFFFF;
+  font-size: 13px;
+  margin: 2px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.levelContainerPop{
+  border-right: 0.1px solid #4f4d4d;
+}
+
+.costContainerPop{
+  border-right: 0.1px solid #4f4d4d;
+}
+
+.upgradeButton {
+  background-color: #FF7500;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  width: 70%;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 40px;
+  font-weight: 600;
+}
+
+.closeIcon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.levelContainerSupr, .costContainerSupr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: -4px;
+  /* margin-left: 18px; */
+  /* margin-right: 18px; */
+  margin-bottom: 10px;
+  /* border: 0.1px solid #4f4d4d; */
+}
+
+
+.levelContainerSupr{
+  border-right: 0.1px solid #4f4d4d;
+  width: 100px;
+  padding-right: 20px;
+}
+.costContainerSupr{
+  width: 100px;
+  padding-left: 20px;
+}
+
+.levelContainerSupr p, .costContainerSupr p, .coinMin, .coinValue {
+  color: #FFFFFF;
+  font-size: 13px;
+  margin: 1px;
+  font-weight: 800px;
+}
+
+.suprUpperRight {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.suprBottomRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top:0.1px solid #4f4d4d;
+  padding-top: 10px;
+  width: 100px;
+  margin-left: 20px;
+}
+
+.suprGrey {
+  color: grey;
+}
+
+/* Modal Styling */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 6px #FF7500;
+  border: 3.1px solid #FF7500;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+}
+
+
+.closeButton {
+position: absolute;
+top: 10px;
+right: 10px;
+background: none;
+border: none;
+cursor: pointer;
+}
+
+.formContainer {
+margin-top: 1.4rem;
+margin-left: 1rem;
+}
+
+.label {
+color: #ffffffd9;
+font-size: 10px;
+margin-bottom: 5px;
+display: block;
+}
+
+.inputField, .selectField {
+width: 88%;
+padding: 0.7rem;
+margin-bottom: 15px;
+border: 3.1px solid #FF7500;
+background-color: #000000;
+color: #FF7500;
+border-radius: 5px;
+font-size: 10px;
+}
+
+.inputField::placeholder, .selectField::placeholder {
+color: #FF7500;
+}
+
+.selectField {
+width: 88%;
+padding: 10px;
+margin-bottom: 15px;
+border: 3.1px solid #FF7500;
+background-color: #000000;
+color: #FF7500;
+border-radius: 5px;
+font-size: 12px;
+appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+position: relative;
+background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ff7800d9"><path d="M7 10l5 5 5-5z"/></svg>');
+background-repeat: no-repeat;
+background-position: calc(100% - 10px) center;
+background-size: 24px;
+}
+
+.selectField option {
+background-color: #FF7500;
+color: #000000;
+font-weight: 700;
+border: none;
+border-bottom: 1px solid #000000;
+padding: 8px 10px;
+}
+
+.selectField option:checked {
+background-color: #000000;
+color: #FF7500;
+}
+
+
+.actionButton1, .actionButton2 {
+width: 100%;
+padding: 12px;
+margin-bottom: 15px;
+background-color: #FF7500;
+color: #000000;
+border: none;
+border-radius: 5px;
+font-size: 15px;
+font-weight: 600;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 0 2px #FF7500;
+cursor: pointer;
+}
+
+.actionButton:hover {
+background-color: #FF7500;
+}
+
+.actionButton1{
+margin-top: 1.5rem;
+}
+
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .pageContainer{
+    padding-bottom: 5rem;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+
+  .tabContainer{
+    width: 100%;
+  }
+  .tab{
+    /* width: 70%; */
+    font-size: 0.9rem;
+  }
+
+  .divsContainer{
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+    font-weight: 900;
+    }
+    .levelContainer,.costContainer,.coinMin{
+      font-size: 0.6rem;
+    }
+    .imageCircle {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .suprIcon {
+      width: 55px;
+      height: 55px;
+    }
+  
+}
+
+@media (max-width: 480px) {
+  .pageContainer{
+    padding-bottom: 5rem;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+
+  .tabContainer{
+    width: 100%;
+  }
+  .tab{
+    /* width: 70%; */
+    font-size: 0.9rem;
+  }
+
+  .divsContainer{
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+    font-weight: 900;
+    }
+    .levelContainer,.costContainer,.coinMin{
+      font-size: 0.6rem;
+    }
+    .imageCircle {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .suprIcon {
+      width: 45px;
+      height: 45px;
+    }
+}
+
+@media (max-width:394px) {
+  .pageContainer{
+    padding-bottom: 5rem;
+  }
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .tab{
+    font-size: 0.62rem;
+  }
+
+  .divsContainer{
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+    font-weight: 900;
+    }
+    .levelContainer,.costContainer,.coinMin{
+      font-size: 0.6rem;
+    }
+    .imageCircle {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .suprIcon {
+      width: 45px;
+      height: 45px;
+    }
+  
+}
+
+@media (max-width: 360px) {
+  .pageContainer{
+    padding-bottom: 5rem;
+  }
+  .heading {
+    font-size: 1.8rem;
+  }
+  .tab{
+    font-size: 0.62rem;
+  }
+  .divsContainer{
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+    font-weight: 900;
+    }
+    .levelContainer,.costContainer,.coinMin{
+      font-size: 0.6rem;
+    }
+    .imageCircle {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .suprIcon {
+      width: 40px;
+      height: 40px;
+    }
+}
+
+
+@media (max-height: 1000px) {
+  .pageContainer {
+    padding-bottom: 7rem;
+    overflow-y: auto;
+  }
+  
+}

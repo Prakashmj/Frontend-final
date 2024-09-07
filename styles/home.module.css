@@ -1,0 +1,474 @@
+.pageContainer {
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  background: linear-gradient(to bottom, #301400, #000000);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'JetBrains Mono';
+  overflow: auto; 
+  overflow-y: auto; /* Add this rule */
+  /* padding-bottom: 5rem; */
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 0.7rem;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+}
+
+.supr {
+  color: #FFFFFF;
+}
+
+.human {
+  color: #FF7500;
+}
+
+.settingsIcon {
+  position: absolute;
+  right: 0;
+  margin-left: 30px;
+  width: 2.3rem;
+  height: 2.3rem;
+  cursor: pointer;
+}
+
+.characterContainer {
+  text-align: center;
+  position: relative;
+  margin-top:1rem;
+}
+
+.characterImage {
+  width: 100%;
+  height: 90vw;
+  margin-top:2.5rem;
+  z-index: 0;
+  position: relative;
+}
+
+/* SuperBoost Container */
+.superBoostContainer {
+  background-color: rgba(128, 128, 128, 0.4);
+  border-radius: 0 150px 150px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0.3px; */
+  position: rela;
+  top: 50px;
+  left: 0;
+  width: 10rem; 
+  margin-left: -5rem;
+  height: 4rem;
+}
+
+/* Coins Per Min Container */
+.coinsPerMinContainer {
+  background-color: rgba(128, 128, 128, 0.4);
+  border-radius: 150px 0 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0.3rem; */
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 150px; /* Adjusted width for spacing */
+  margin-right: -4.8rem;
+  height: 4rem;
+}
+
+.superBoostContainer {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 8.5rem;
+  height: 4rem;
+}
+
+.coinsPerMinContainer {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  width: 8.7rem;
+  height: 4rem;
+}
+.superBoostTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-left: 1.2rem; */
+  width: 5.4rem;
+}
+.coinsPerMinTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-left: 1.2rem; */
+  width: 5.2rem;
+
+}
+
+.superBoostLabel {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+
+.coinsPerMinLabel {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  text-align: center;
+  /* margin-right: 2.2rem;/ */
+  margin-top: 1rem;
+}
+
+.superText {
+  color: #FF7500;
+}
+
+.boostText {
+  color: #FFFFFF;
+}
+
+.comingSoon {
+  font-size: 9px;
+  font-family: 'JetBrains Mono', monospace;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: -4px;
+}
+
+.coinsValue {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FF7500;
+  margin-top: -0.23rem;
+  /* margin-right: 1.9rem; */
+}
+
+.superBoostIcon {
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-left: -60px;
+  margin-top: 4px;
+  /* margin-left: -50px; */
+}
+
+.coinsPerMinIcon {
+  width: 3.3rem;
+  height: 3.3rem;
+  margin-left: 0.3rem;
+  margin-top:6px;
+}
+
+.coinsPerMinTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .coinsPerMinIconContainer {
+  margin-right: 10px;
+} */
+
+/* Boost Container */
+.boostContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 85px;
+  left: 0;
+  width: 1rem;
+  margin-left: -2.1rem; 
+}
+
+/* Energy Container */
+.energyContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 85px;
+  right: 0;
+  width: 35px;
+  margin-right: -2.8rem;
+}
+
+.boostLabel {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-top: 1.5rem;
+
+}
+
+.energyLabel {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-top: 1.5rem;
+}
+
+.boostIcon {
+  width: 2.5rem;
+  height:2.5rem;
+  margin-top: 6px;
+  margin-top: -7px;
+}
+
+.energyValue {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.67rem;
+  color: #FFFFFF;
+  margin-top: -7px;
+}
+
+.coinsContainer {
+  background-color: #000000;
+  border: 1px solid #FF7500;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 10px #FF7500;
+  width: 60%;
+  height: 4.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -0.4rem;
+  margin-left: -0.5rem;
+}
+
+.valueContainer {
+  background-color: #000000;
+  border: 1px solid #FF7500;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 10px #FF7500;
+  width: 108%;
+  height: 4.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 1px;
+  position: relative;
+  margin-top: -0.3rem;
+  margin-left: -1rem;
+}
+
+.coinsLabel,.coinsLabel2,.timeLabel {
+  color: #FF7500;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+}
+.coinsLabel2 {
+  color: #FFFFFF;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.5rem;
+}
+
+.timeContainer {
+  margin-top: 0.3rem;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.timeLabel{
+  font-size: 1.8rem;
+}
+.coinsEarned {
+  color: #FFFFFF;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  margin-top: -1.2rem;
+  position: relative;
+}
+
+
+  /* Modal Styling */
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 6px #FF7500;
+    border: 3.1px solid #FF7500;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+  }
+
+  
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.formContainer {
+  margin-top: 1.4rem;
+  margin-left: 1rem;
+  }
+
+.label {
+  color: #ffffffd9;
+  font-size: 10px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.inputField, .selectField {
+  width: 88%;
+  padding: 0.7rem;
+  margin-bottom: 15px;
+  border: 3.1px solid #FF7500;
+  background-color: #000000;
+  color: #FF7500;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.inputField::placeholder, .selectField::placeholder {
+  color: #FF7500;
+}
+
+.selectField {
+  width: 88%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 3.1px solid #FF7500;
+  background-color: #000000;
+  color: #FF7500;
+  border-radius: 5px;
+  font-size: 12px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ff7800d9"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+  background-size: 24px;
+}
+
+.selectField option {
+  background-color: #FF7500;
+  color: #000000;
+  font-weight: 700;
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding: 8px 10px;
+}
+
+.selectField option:checked {
+  background-color: #000000;
+  color: #FF7500;
+}
+
+
+.actionButton1, .actionButton2 {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: #FF7500;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 2px #FF7500;
+  cursor: pointer;
+}
+
+.actionButton:hover {
+  background-color: #FF7500;
+}
+
+.actionButton1{
+  margin-top: 1.5rem;
+}
+
+@keyframes moveUpAndFade {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px); /* Adjust based on your preference */
+  }
+}
+
+.coinPerTap {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background: url('/home2.svg') no-repeat center center;
+  animation: moveUpAndFade 1s ease-out forwards;
+  pointer-events: none; /* Ensures it doesn't interfere with user interactions */
+}
+
+
+
+
+@media (max-height: 1000px) {
+  .pageContainer {
+    padding-bottom: 7rem;
+    overflow-y: auto;
+  }
+  
+}
+/* @media (min-width: 475px) {
+  .superBoostContainer{
+    margin-left: -5.8rem;
+  }
+  .superBoostContainer{
+    margin-left: -5.77rem;
+  }
+  
+} */
+

@@ -1,0 +1,65 @@
+  .energyBox {
+    position: relative;
+    background-color: black;
+    border: 2px solid #FF7500; /* Orange border */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #FF7500; /* Orange shadow */
+    width: 300px;
+    text-align: center;
+    height: 400px; /* Adjusted height to fit the content */
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #FF7500; /* Orange color */
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .title {
+    color: white;
+    margin: 20px 0;
+    font-size: 1.3rem;
+    /* font-weight: 600; */
+    line-height: 20px;
+    margin-top: 1rem;
+  }
+  
+  .energyIcon {
+    width: 3rem; /* Adjust size as needed */
+    margin: 20px 0;
+  }
+  
+  .energyLevel {
+    color: white;
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 30px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  .useButton {
+    background-color: #FF7500; /* Orange color */
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    width: 250px;
+    margin-top: 30px;
+    box-shadow: 0 0 5px #FF7500;
+  }
+  
+  .useButton:hover {
+    background-color: #e06600; /* Slightly darker orange on hover */
+  }
+  

@@ -1,0 +1,72 @@
+  .upgradeBox {
+    position: relative;
+    background-color: black;
+    border: 2px solid #FF7500; /* Orange border */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #FF7500; /* Orange shadow */
+    width: 300px;
+    text-align: center;
+    height: 300px;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #FF7500; /* Orange color */
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .levelText {
+    color: white;
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 30px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  .coinContainer {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .coinIcon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .coinAmount {
+    color: #FF7500; /* Orange color */
+    font-size: 30px;
+    margin-top: 2px;
+    font-weight: bold;
+  }
+  
+  .upgradeButton {
+    background-color: #FF7500; /* Orange color */
+    color: black;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: 900;
+    width: 250px;
+    margin-top: 30px;
+    box-shadow: 0 0 3px #FF7500;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  .upgradeButton:hover {
+    background-color: #e06600; /* Slightly darker orange on hover */
+  }
+  

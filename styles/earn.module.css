@@ -1,0 +1,476 @@
+.pageContainer {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #060300, #000000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'JetBrains Mono', monospace;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-bottom: -45px;
+    position: relative;
+  }
+  
+  .heading {
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .supr {
+    color: #FFFFFF;
+  }
+  
+  .human {
+    color: #FF7500;
+  }
+
+  .orangeText {
+    color: #FF7500;
+  }
+  
+
+  .settingsIcon {
+    position: absolute;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin-left: 0.8rem;
+    margin-top: -0.5rem;
+  }
+  
+.earnMoreText {
+    color: #FFFFFF;
+    font-weight:700;
+    font-size:1rem;
+    margin-top: 50px;
+    font-family: 'JetBrains Mono', monospace;
+    text-align: center;
+}
+
+.coinsText {
+    color: #FF7500;
+}
+
+.coinIconContainer {
+    margin-top: 20px;
+}
+
+.imageCircle {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.4rem;
+    height: 5.4rem;
+    margin-top: 1rem;
+  }
+  
+  .earnMoreIcon{
+    width: 10rem;
+    height: 10rem;
+  }
+
+.airdropContainer {
+    background-color: #FF7500;
+    padding-right: 10px;
+    padding-left: 4px;
+    margin-bottom: 0.58rem;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 0.3rem #FF7500;
+}
+
+.airdropIcon {
+    width: 3rem;
+    height: 3.3rem;
+    margin-right: 10px;
+}
+
+.airdropText {
+    color: #000000;
+    font-family: 'JetBrains Mono',monospace;
+    font-weight: 900;
+    font-size: 0.82rem;
+}
+
+.noteText {
+    color: #FFFFFF;
+    font-size: 0.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tasksContainer {
+    width: 90%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.taskLabel {
+    color: #ffffff;
+    font-size: 0.7rem;
+    margin-bottom: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    text-align: left;
+    font-weight: 900;
+}
+
+.task {
+    background-color: #000000;
+    border: 1px solid #FF7500;
+    padding: 0.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    box-shadow: 0 0 1px #FF7500;
+}
+
+.taskIcon {
+    width: 1.7rem;
+    height: 1.5rem;
+    margin-right: 10px;
+}
+
+.taskTitle {
+    color: #FFFFFF;
+    font-size: 0.55rem;
+    flex-grow: 1;
+}
+
+.arrowIcon {
+    width: 13px;
+    height: 17px;
+    cursor: pointer;
+}
+
+/* Popup Container */
+.popup-container {
+    position: fixed; /* Stays in place relative to the viewport */
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Adjusts position to center */
+    z-index: 1000; /* High z-index to appear above other elements */
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 250px; /* Adjust as needed */
+    display: none; /* Initially hidden */
+  }
+  
+  /* Overlay to darken background when popup is active */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 999; /* Below the popup, above content */
+    display: none; /* Initially hidden */
+  }
+  
+  .closeIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  /* Modal Styling */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 6px #FF7500;
+    border: 3.1px solid #FF7500;
+    width: 68%;
+    max-width: 400px;
+    position: relative;
+  }
+
+  
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.formContainer {
+  margin-top: 1.4rem;
+  margin-left: 1rem;
+  }
+
+.label {
+  color: #ffffffd9;
+  font-size: 10px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.inputField, .selectField {
+  width: 90.1%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 3.1px solid #FF7500;
+  background-color: #000000;
+  color: #FF7500;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.inputField::placeholder, .selectField::placeholder {
+  color: #FF7500;
+}
+
+.selectField {
+  width: 99%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 3.1px solid #FF7500;
+  background-color: #000000;
+  color: #FF7500;
+  border-radius: 5px;
+  font-size: 12px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ff7800d9"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+  background-size: 24px;
+}
+
+.selectField option {
+  background-color: #FF7500;
+  color: #000000;
+  font-weight: 700;
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding: 8px 10px;
+}
+
+.selectField option:checked {
+  background-color: #000000;
+  color: #FF7500;
+}
+
+
+.actionButton1, .actionButton2 {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: #FF7500;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 2px #FF7500;
+  cursor: pointer;
+}
+
+.actionButton:hover {
+  background-color: #FF7500;
+}
+
+.actionButton1{
+  margin-top: 1.5rem;
+}
+
+  
+@media (max-width: 768px) {
+  .pageContainer{
+    padding-bottom: 8rem;
+  }
+
+  .heading{
+      font-size: 2.1rem;
+  }
+
+  .settingsIcon{
+    margin-top: 0.1rem;
+  }
+
+
+  .airdropContainer{
+      width: 64%;
+      margin-top: 3.5rem;
+  }
+
+  .noteText{
+    font-size: 0.6rem;
+  }
+
+  .tasksContainer{
+      width: 95%;
+  }
+
+  .modalContent{
+    width: 80%;
+  }
+
+  .inputField,.selectField{
+    width: 93%;
+  }
+
+  .actionButton1,.actionButton2{
+    width: 93%;
+  }
+  
+  }
+  
+  
+  @media (max-width: 480px) {
+.pageContainer{
+        padding-bottom: 8rem;
+      }
+  
+      .heading{
+          font-size: 2.3rem;
+      }
+
+      .settingsIcon{
+        margin-top: 0.1rem;
+        width: 2.2rem;
+        height: 2.2rem;
+
+      }
+  
+      .airdropContainer{
+          width: 64%;
+          margin-top: 3.5rem;
+      }
+
+      .noteText{
+        font-size: 0.56rem;
+      }
+  
+      .tasksContainer{
+          width: 88%;
+      }
+
+      .modalContent{
+        width: 80%;
+      }
+    
+      .inputField,.selectField{
+        width: 93%;
+      }
+    
+      .actionButton1,.actionButton2{
+        width: 93%;
+      }
+  }
+  
+  @media (max-width:394px) {
+    .pageContainer{
+        padding-bottom: 8rem;
+      }
+  
+      .heading{
+          font-size: 2rem;
+      }
+
+      .settingsIcon{
+        margin-top: 0.1rem;
+        width: 2rem;
+        height: 2rem;
+        
+      }
+  
+      .airdropContainer{
+          width: 70%;
+          margin-top: 3.5rem;
+      }
+
+      .noteText{
+        font-size: 0.55rem;
+      }
+  
+      .tasksContainer{
+          width: 88%;
+      }
+
+      .modalContent{
+        width: 80%;
+      }
+    
+      .inputField,.selectField{
+        width: 93%;
+      }
+    
+      .actionButton1,.actionButton2{
+        width: 93%;
+      }
+    
+  }
+  
+  @media (max-width: 360px) {
+    .pageContainer{
+      padding-bottom: 8rem;
+    }
+    .heading{
+        font-size: 1.86rem;
+    }
+    .airdropContainer{
+        width: 74%;
+        margin-top: 3.5rem;
+    }
+    .noteText{
+      font-size: 0.45rem;
+      font-weight: 700;
+    }
+    .tasksContainer{
+        width: 88%;
+    }
+    .modalContent{
+      width: 80%;
+    }
+    .inputField,.selectField{
+      width: 93%;
+    }
+    .actionButton1,.actionButton2{
+      width: 93%;
+    }
+  }
+  

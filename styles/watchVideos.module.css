@@ -1,0 +1,71 @@
+.overlay {
+    position: fixed; /* Ensures the overlay stays fixed relative to the viewport */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 1000; /* High z-index to be above other elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .youtubeBox {
+    position: relative;
+    background-color: black;
+    border: 2px solid #FF7500;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #FF7500;
+    width: 22rem;
+    height: 32rem;
+    text-align: center;
+    margin-top: 300px;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #FF7500;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .youtubeIcon {
+    width: 70px;
+    margin: 20px auto;
+  }
+  
+  .videoContainer {
+    border: 2px solid #FF7500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 12rem;
+    width: 19rem;
+    border-radius: 5px;
+  }
+  
+  .video {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .checkButton {
+    background-color: #FF7500;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    width: 15rem;
+    margin-top: 2rem;
+    box-shadow: 0 0 5px #FF7500;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  

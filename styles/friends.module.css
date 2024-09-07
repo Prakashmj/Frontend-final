@@ -1,0 +1,327 @@
+.pageContainer {
+    width: 100%;
+    min-height: 110vh;
+    background: linear-gradient(to bottom, #3e1a00, #000000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'JetBrains Mono', monospace;
+    overflow-y: auto; /* Make the page scrollable */
+    /* padding-bottom: 100px; */
+    font-family: 'JetBrains Mono', monospace;
+}
+  
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 10px;
+    position: relative;
+}
+  
+.shareIcon {
+    position: absolute;
+    left: 0;
+    width: 2.3rem;
+    height: 2.3rem;
+    cursor: pointer;
+}
+  
+.heading {
+    font-size: 2.6rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+}
+  
+.supr {
+    color: #FFFFFF;
+}
+
+.human {
+    color: #FF7500;
+}
+  
+  
+.settingsIcon {
+    position: absolute;
+    right: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+  
+.inviteContainer {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 20px;
+}
+  
+.inviteText {
+    color: #FFFFFF;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-bottom: 25px;
+    margin-top: -15px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.inviteText .supr {
+    color: #FF7500; /* SUPERHUMANS! in FF7500 color */
+}
+  
+.inviteBlock {
+    background-color: #000000;
+    border: 2px solid #FF7500;
+    padding: 3px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px #61440efc;
+    margin-bottom: 20px;
+}
+  
+.giftIcon {
+    width: 50px;
+    height: 55px;
+    margin-right: 10px;
+    margin-left: 4px;
+}
+  
+.inviteDetails {
+    text-align: left;
+}
+  
+.inviteLabel {
+    color: #FFFFFF;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+  
+.receiveText {
+    color: #FFFFFF;
+    font-family: 'JetBrains Mono';
+    font-size: 14px;
+    font-weight: 800;
+    margin-top: -9px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.receiveText .supr {
+    color: #FF7500; /* +1,000 in FF7500 color */
+    font-weight: 600;
+}
+  
+.coinIcon {
+    width: 20px;
+    height: 20px;
+    margin-left: 7px;
+    margin-bottom: -5px;
+}
+.coinIconFriends{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: 7px;
+    /* margin-bottom: -5px; */
+}
+  
+.friendsList {
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+}
+  
+.friendsListTitle {
+    color: #FFFFFF;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.friendsListTitle .supr {
+    color: #FF7500; 
+}
+  
+.friend {
+    background-color: #000000;
+    border: 1px solid #FF7500;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+  
+.friendIcon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+  
+.friendName {
+    color: #FFFFFF;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 800;
+    flex-grow: 1;
+    text-align: left;
+}
+  
+.friendCoins {
+    display: flex;
+    align-items: center;
+    width: 5rem; /* Fixed width for consistent alignment */
+}
+  
+.coinAmount {
+    color: #FF7500;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: 5px;
+}
+  
+/* .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */
+
+/* Modal Styling */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 6px #FF7500;
+  border: 3.1px solid #FF7500;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+}
+
+
+.closeButton {
+position: absolute;
+top: 10px;
+right: 10px;
+background: none;
+border: none;
+cursor: pointer;
+}
+
+.formContainer {
+margin-top: 1.4rem;
+margin-left: 1rem;
+}
+
+.label {
+color: #ffffffd9;
+font-size: 10px;
+margin-bottom: 5px;
+display: block;
+}
+
+.inputField, .selectField {
+width: 88%;
+padding: 0.7rem;
+margin-bottom: 15px;
+border: 3.1px solid #FF7500;
+background-color: #000000;
+color: #FF7500;
+border-radius: 5px;
+font-size: 10px;
+}
+
+.inputField::placeholder, .selectField::placeholder {
+color: #FF7500;
+}
+
+.selectField {
+width: 88%;
+padding: 10px;
+margin-bottom: 15px;
+border: 3.1px solid #FF7500;
+background-color: #000000;
+color: #FF7500;
+border-radius: 5px;
+font-size: 12px;
+appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+position: relative;
+background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ff7800d9"><path d="M7 10l5 5 5-5z"/></svg>');
+background-repeat: no-repeat;
+background-position: calc(100% - 10px) center;
+background-size: 24px;
+}
+
+.selectField option {
+background-color: #FF7500;
+color: #000000;
+font-weight: 700;
+border: none;
+border-bottom: 1px solid #000000;
+padding: 8px 10px;
+}
+
+.selectField option:checked {
+background-color: #000000;
+color: #FF7500;
+}
+
+
+.actionButton1, .actionButton2 {
+width: 100%;
+padding: 12px;
+margin-bottom: 15px;
+background-color: #FF7500;
+color: #000000;
+border: none;
+border-radius: 5px;
+font-size: 15px;
+font-weight: 600;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 0 2px #FF7500;
+cursor: pointer;
+}
+
+.actionButton:hover {
+background-color: #FF7500;
+}
+
+.actionButton1{
+margin-top: 1.5rem;
+}
+
+   @media (max-height: 1000px) {
+    .pageContainer {
+      padding-bottom: 7rem;
+      overflow-y: auto;
+    }
+    
+  }
